@@ -5,6 +5,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaArbol", "PruebaArbol\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaArbolTests", "PruebaArbolTests\PruebaArbolTests.csproj", "{EC2C2955-027B-4579-A292-C26E093F30C5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Arboles", "Arboles", "{C2EDCCC2-87EE-407E-89AF-104F0194A951}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Inversion de control", "Inversion de control", "{DFBD7772-370F-45AF-8ED5-C7F2D138CABA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InversionDeControl", "InversionDeControl\InversionDeControl.csproj", "{31693C08-CA12-4119-8CCC-E957587CD305}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,8 +25,17 @@ Global
 		{EC2C2955-027B-4579-A292-C26E093F30C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC2C2955-027B-4579-A292-C26E093F30C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC2C2955-027B-4579-A292-C26E093F30C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31693C08-CA12-4119-8CCC-E957587CD305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31693C08-CA12-4119-8CCC-E957587CD305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31693C08-CA12-4119-8CCC-E957587CD305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31693C08-CA12-4119-8CCC-E957587CD305}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0A91466B-48A0-4166-BF80-0D3123EF8298} = {C2EDCCC2-87EE-407E-89AF-104F0194A951}
+		{EC2C2955-027B-4579-A292-C26E093F30C5} = {C2EDCCC2-87EE-407E-89AF-104F0194A951}
+		{31693C08-CA12-4119-8CCC-E957587CD305} = {DFBD7772-370F-45AF-8ED5-C7F2D138CABA}
 	EndGlobalSection
 EndGlobal
