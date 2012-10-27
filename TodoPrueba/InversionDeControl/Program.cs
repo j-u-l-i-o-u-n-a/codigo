@@ -13,14 +13,53 @@ namespace InversionDeControl
         {
             var container = new IoC();
             container.Register(typeof(ShoppingCart), typeof(ShoppingCart));
-            container.Register(typeof(ICreditCard), typeof(Visa));
-            var cart = container.Resolve(typeof(ShoppingCart)) as ShoppingCart;
+            container.Register(typeof(ICreditCard), typeof(MasterCard));
+            var cart = container.Resolve<ShoppingCart>();
             // var cart = new ShoppingCart(new MasterCard());
             cart.Pay();
 
             Console.ReadKey();
         }
     }
+
+//    internal class CustomResolver
+//    {
+//        Dictionary<Type, Type> _registeredTypes = new Dictionary<Type, Type>();
+//
+//        public T Resolve<T>()
+//        {
+//            if (!_registeredTypes.ContainsKey(typeof(T)))
+//            {
+//                throw new Exception("Not registered");
+//            }
+//
+//            var typeOfRequestedObject = _registeredTypes[typeof (T)];
+//
+//            var constructorsList = typeOfRequestedObject.GetConstructors();
+//            var firstConstructor = constructorsList[0];
+//            var parametersInfo = firstConstructor.GetParameters();
+//
+//            if (!parametersInfo.Any())
+//            {
+//                return Activator.CreateInstance<T>();
+//            }
+//            else
+//            {
+//
+//                var paramObjects = new List<object>();
+//                foreach (ParameterInfo paramInfo in parametersInfo)
+//                {
+//                    var paramType = paramInfo.ParameterType;
+//                    paramObjects.Add(Resolve<paramType>());
+//                }
+//            }
+//        }
+//
+//        public void Register<T, T1>()
+//        {
+//            _registeredTypes.Add(typeof (T), typeof (T1));
+//        }
+//    }
 
     internal class IoC
     {
@@ -34,6 +73,11 @@ namespace InversionDeControl
         public void Register(Type type, Type mapToType)
         {
             _registry.Add(type, mapToType);
+        }
+
+        public T Resolve<T>()
+        {
+            return (T)Resolve(typeof (T));
         }
 
         public object Resolve(Type type)
