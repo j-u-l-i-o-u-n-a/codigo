@@ -89,8 +89,7 @@ namespace InversionDeControl
 
             var requiredType = _registry[type];
 
-            var constructors = requiredType.GetConstructors();
-            var firstConstructor = constructors[0];
+            var firstConstructor = requiredType.GetConstructors().First();
             var parameterInfos = firstConstructor.GetParameters();
 
             if (!parameterInfos.Any())

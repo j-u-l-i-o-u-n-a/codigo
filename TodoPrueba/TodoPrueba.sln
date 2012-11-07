@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Inversion de control", "Inv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InversionDeControl", "InversionDeControl\InversionDeControl.csproj", "{31693C08-CA12-4119-8CCC-E957587CD305}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InversionConUnity", "InversionConUnity\InversionConUnity.csproj", "{64551633-096C-4FC7-8B48-62748F45419D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InversionConCastleWindsor", "InversionConCastleWindsor\InversionConCastleWindsor.csproj", "{8678C93E-8BDF-45E8-9338-580A6244F368}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,14 @@ Global
 		{31693C08-CA12-4119-8CCC-E957587CD305}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31693C08-CA12-4119-8CCC-E957587CD305}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31693C08-CA12-4119-8CCC-E957587CD305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64551633-096C-4FC7-8B48-62748F45419D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64551633-096C-4FC7-8B48-62748F45419D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64551633-096C-4FC7-8B48-62748F45419D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64551633-096C-4FC7-8B48-62748F45419D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8678C93E-8BDF-45E8-9338-580A6244F368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8678C93E-8BDF-45E8-9338-580A6244F368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8678C93E-8BDF-45E8-9338-580A6244F368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8678C93E-8BDF-45E8-9338-580A6244F368}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,5 +49,10 @@ Global
 		{0A91466B-48A0-4166-BF80-0D3123EF8298} = {C2EDCCC2-87EE-407E-89AF-104F0194A951}
 		{EC2C2955-027B-4579-A292-C26E093F30C5} = {C2EDCCC2-87EE-407E-89AF-104F0194A951}
 		{31693C08-CA12-4119-8CCC-E957587CD305} = {DFBD7772-370F-45AF-8ED5-C7F2D138CABA}
+		{64551633-096C-4FC7-8B48-62748F45419D} = {DFBD7772-370F-45AF-8ED5-C7F2D138CABA}
+		{8678C93E-8BDF-45E8-9338-580A6244F368} = {DFBD7772-370F-45AF-8ED5-C7F2D138CABA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
 	EndGlobalSection
 EndGlobal
